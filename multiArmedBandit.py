@@ -57,10 +57,10 @@ def exploit():
         A = 9
         SD = 3
 
-    if (r == r2):
+    elif (r == r2):
         A = 7
         SD = 5
-    if (r == r3):
+    else:
         A = 11
         SD = 7
 
