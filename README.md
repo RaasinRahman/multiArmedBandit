@@ -6,4 +6,4 @@ Explore: The person will go to a random food place and be given a level of hapin
 
 Exploit: The person will go to each food-place once, and after going to each location, the food-place that gives the highest hapiness will be chosen every single time out of 100 visits.
 
-e-Greedy: The person will have a variation between exploration and exploitation. The value of e will determine what percentage of visits the person will choose to explore instead of exploit. e-Greedy can provide an optimal level of hapiness by adding a slight variation to the choice of where to eat. Eating the same thing over and over even though it may be the best will get boring and decline in satisfaction.
+e-Greedy: The person will have a variation between exploration and exploitation. The value of e will determine what percentage of visits the person will choose to explore instead of exploit. e-Greedy can provide an optimal level of hapiness by adding a slight variation to the choice of where to eat. Eating the same thing over and over, though it may be the best will get boring and decline in satisfaction.
