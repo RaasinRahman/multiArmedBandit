@@ -34,39 +34,39 @@ def explore():
 def exploit():
     total = 0 #initializing total
 
-    C1 = 9
-    SD = 3
-    r1 = (random.normalvariate(C1, SD))
-    total = total + r1
+    C1 = 9 # cafeteria 1 AVG Hapiness
+    SD = 3  # cafeteria 1 St. Dev
+    r1 = (random.normalvariate(C1, SD)) # random number generator based on AVG and st.Dev
+    total = total + r1 #adding random value to the total
 
 
-    C2 = 7
-    SD2 = 5
-    r2 = (random.normalvariate(C2, SD2))
-    total = total + r2
+    C2 = 7 # cafeteria 2 AVG Hapiness
+    SD2 = 5 # cafeteria 2 St. Dev
+    r2 = (random.normalvariate(C2, SD2)) # random number generator based on AVG and st.Dev
+    total = total + r2 #adding random value to the total
 
 
-    C3 = 11
-    SD3 = 7
-    r3 = (random.normalvariate(C3, SD3))
-    total = total + r3
+    C3 = 11 # cafeteria 3 AVG Hapiness
+    SD3 = 7 # cafeteria 3 AVG Hapiness
+    r3 = (random.normalvariate(C3, SD3)) # random number generator based on AVG and st.Dev
+    total = total + r3 #adding random value to the total
 
-    r = max(r1, r2, r3)
+    r = max(r1, r2, r3) #finding the cafeteria that will generate the highest level of hapiness
 
-    if (r == r1):
+    if (r == r1): #if the max value is r1, then cafeteria 1 generates the highest level of hapiness and therefore proceeds with it's given average and st.dev
         A = 9
         SD = 3
 
-    elif (r == r2):
+    elif (r == r2): #if the max value is r1, then cafeteria 2 generates the highest level of hapiness and therefore proceeds with it's given average and st.dev
         A = 7
         SD = 5
-    else:
+    else:       #if the max value is not 21 or r2, then cafeteria 3 generates the highest level of hapiness and therefore proceeds with it's given average and st.dev
         A = 11
         SD = 7
 
-    for i in range(297):
+    for i in range(297): # A foor loop that generates a random number based on the average and st.dev of the cafteria with the highest level of hapiness
         p = (random.normalvariate(A, SD))
-        total = total + p
+        total = total + p #adds each random value to the total
     return total
 
 
